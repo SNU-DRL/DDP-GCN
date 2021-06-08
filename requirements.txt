@@ -1,0 +1,4 @@
+numpy>=1.15
+pandas>=0.23
+tensorflow>=1.9.0
+scipy>=1.1.0

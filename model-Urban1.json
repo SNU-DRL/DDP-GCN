@@ -1,0 +1,131 @@
+{
+  "0": {
+    "output_filepath": "Urban1-single/",
+    "data_type": "Urban1",
+    "n_route": 480,
+    "Ks_dict": {
+      "distance_kernel": {
+        "n": 1,
+        "files": [
+          "distance_W_Urban1.csv"
+        ]
+      }
+    },
+    "ordering": [
+      "distance_kernel"
+    ],
+    "blocks": [
+      [
+        1,
+        32,
+        64
+      ],
+      [
+        64,
+        32,
+        64
+      ]
+    ],
+    "kt": 3
+  },
+
+  "1": {
+    "output_filepath": "Urban1-parallel/",
+    "data_type": "Urban1",
+    "n_route": 480,
+    "Ks_dict": {
+      "parallel_kernel": {
+        "n": 12,
+        "files": [
+          "distance_W_Urban1.csv",
+          "Direction/Direction-0_Urban1.csv",
+          "Direction/Direction-1_Urban1.csv",
+          "Direction/Direction-2_Urban1.csv",
+          "Direction/Direction-3_Urban1.csv",
+          "PositionalRelationship/WP1_Urban1.csv",
+          "PositionalRelationship/WP2_Urban1.csv",
+          "PositionalRelationship/WP3_Urban1.csv",
+          "PositionalRelationship/WP4_Urban1.csv",
+          "Distance-partition-filter/DistanceFilter-0_Urban1.csv",
+          "Distance-partition-filter/DistanceFilter-1_Urban1.csv",
+          "Distance-partition-filter/DistanceFilter-2_Urban1.csv"
+        ]
+      }
+    },
+    "ordering": [
+      "parallel_kernel"
+    ],
+    "blocks": [
+      [
+        1,
+        32,
+        64
+      ],
+      [
+        64,
+        32,
+        64
+      ]
+    ],
+    "kt": 3
+  },
+
+  "2": {
+    "output_filepath": "Urban1-stacked/",
+    "data_type": "Urban1",
+    "n_route": 480,
+    "Ks_dict": {
+      "distance_kernel": {
+        "n": 1,
+        "files": [
+          "distance_W_Urban1.csv"
+        ]
+      },
+      "direction_kernel": {
+        "n": 4,
+        "files": [
+          "Direction/Direction-0_Urban1.csv",
+          "Direction/Direction-1_Urban1.csv",
+          "Direction/Direction-2_Urban1.csv",
+          "Direction/Direction-3_Urban1.csv"
+        ]
+      },
+      "position_kernel": {
+        "n": 4,
+        "files": [
+          "PositionalRelationship/WP1_Urban1.csv",
+          "PositionalRelationship/WP2_Urban1.csv",
+          "PositionalRelationship/WP3_Urban1.csv",
+          "PositionalRelationship/WP4_Urban1.csv"
+        ]
+      },
+      "distAsFilter_kernel": {
+        "n": 3,
+        "files": [
+          "Distance-partition-filter/DistanceFilter-0_Urban1.csv",
+          "Distance-partition-filter/DistanceFilter-1_Urban1.csv",
+          "Distance-partition-filter/DistanceFilter-2_Urban1.csv"
+        ]
+      }
+    },
+    "ordering": [
+      "distance_kernel",
+      "direction_kernel",
+      "position_kernel",
+      "distAsFilter_kernel"
+    ],
+    "blocks": [
+      [
+        1,
+        32,
+        64
+      ],
+      [
+        64,
+        32,
+        64
+      ]
+    ],
+    "kt": 3
+  }
+}
