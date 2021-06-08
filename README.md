@@ -4,7 +4,7 @@
 
 <img src="https://github.com/snu-adsl/DDP-GCN/blob/main/images/model-spatial.PNG" width="600" align="center">
 
-This is a TensorFlow implementation of DDP-GCN in the following paper: .
+This is a TensorFlow implementation of DDP-GCN in the following paper: https://arxiv.org/abs/1905.12256.
 Our codes are mostly built upon the codes of https://github.com/VeritasYin/STGCN_IJCAI-18.
 
 ## Requirements
